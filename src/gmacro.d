@@ -57,7 +57,11 @@ public:
         pass = psu;
 	}
     string[] getonce(string func) {
-        return pass[func].split(",");
+        if (func in pass) {
+            return pass[func].split(",");
+        } else {
+            return ["NULL"];
+        }
 	}
 }
 
