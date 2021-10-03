@@ -10,3 +10,7 @@ You can view the source code on GitHub.
 Examples:
 
 PROJECT(hello-world, no-dep);
+
+How to Build:
+
+    You can build using the .\build command on windows, or using make on Unix devices.
