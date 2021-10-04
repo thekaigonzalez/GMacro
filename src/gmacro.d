@@ -38,7 +38,7 @@ public:
     string[string] defineonce() {
         string[] each_statement = pkey.split(";");
         foreach(string stat; each_statement) {
-            if (stat.length > 1) {
+            if (stat.length > 1 && !startsWith(stat, ";")) {
                 string fname = stat[0 .. stat.indexOf("(")];
                 string fargs = stat[stat.indexOf("(")+1 .. stat.indexOf(")")];
                 fargs = fargs.strip();

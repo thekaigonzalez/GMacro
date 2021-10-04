@@ -1,3 +1,4 @@
+.PHONY: api all
 # GMacro Build System
 # Copyright (C) 2021 Kai D. Gonzalez
 #
@@ -21,3 +22,5 @@ OUTPUT=sgm
 all:
 	$(DMD) $(SRC) $(FLAGS)
 	rm *.o
+api:
+	$(DMD) tests/api.d -Isrc/ src/gmacro.d
