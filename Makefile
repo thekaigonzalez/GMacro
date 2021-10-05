@@ -16,7 +16,7 @@
 
 DMD=dmd
 SRC=src/simplergmacro.d src/gmacro.d
-FLAGS=-O 
+FLAGS=-O
 OUTPUT=sgm
 
 all:

@@ -43,6 +43,9 @@ public:
                 string fargs = stat[stat.indexOf("(")+1 .. stat.indexOf(")")];
                 fargs = fargs.strip();
                 fname = fname.strip();
+                if (fname in all_stuff) {
+                    writeln("warning:gmacro.d:47: same property defined twice");
+                }
                 all_stuff[fname] = fargs; 
             }
 		}

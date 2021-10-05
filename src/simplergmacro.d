@@ -26,6 +26,9 @@ import std.array;
 import std.file;
 import gmacro;
 
+export void luaopen_but() {
+    
+}
 
 int main(string[] args)
 {
